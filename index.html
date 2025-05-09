@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test 1</title>
+
+    <!-- Fonts & Styles -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;700&family=DM+Sans:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Should be Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <style>
+
+
+/* Subjects Section */
+.subjects-section {
+  background-color: #FDF7F0;
+}
+
+.subjects-cards {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+}
+
+.subject-card {
+  background-color: #FEECDC;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  min-width: 150px;
+}
+
+.subject-card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.subject-card span {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+
+  </style>
+
+  <body>
+    <!-- Header -->
+    <header
+      class="custom-header d-flex justify-content-around align-items-center"
+    >
+      <div class="d-flex align-items-center gap-2">
+        <img src="images/logo/Vector.png" alt="logo" />
+        <h3 class="text-white mb-0">Educare</h3>
+      </div>
+
+      <nav class="navbar navbar-expand-lg">
+        <button
+          class="navbar-toggler text-white"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul
+            class="navbar-nav ms-auto d-flex align-items-center gap-3 gap-sm-2"
+          >
+            <li class="nav-item">
+              <a class="nav-link text-white dm-sans-text" href="#">About us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white dm-sans-text"
+                href="#"
+                data-bs-toggle="dropdown"
+                >Courses</a
+              >
+              <ul class="dropdown-menu">
+                <li class="dropend position-relative">
+                  <a
+                    href="#"
+                    class="dropdown-item dropdown-toggle"
+                    id="schoolDropdown"
+                    >For School Students</a
+                  >
+                  <ul class="submenu dropdown-menu" id="schoolSubmenu">
+                    <li><a class="dropdown-item" href="#">Math</a></li>
+                    <li><a class="dropdown-item" href="#">Physics</a></li>
+                    <li><a class="dropdown-item" href="#">Chemistry</a></li>
+                    <li><a class="dropdown-item" href="#">Biology</a></li>
+                    <li><a class="dropdown-item" href="#">English</a></li>
+                    <li><a class="dropdown-item" href="#">Arabic</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Computer Science</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Civics</a></li>
+                    <li><a class="dropdown-item" href="#">Geography</a></li>
+                    <li><a class="dropdown-item" href="#">Economics</a></li>
+                    <li><a class="dropdown-item" href="#">History</a></li>
+                    <li><a class="dropdown-item" href="#">Politics</a></li>
+                  </ul>
+                </li>
+                <li><a class="dropdown-item" href="#">For kids</a></li>
+                <li><a class="dropdown-item" href="#">Other</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white dm-sans-text" href="#event"
+                >Careers</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white dm-sans-text" href="#feedback"
+                >News & Blogs</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white dm-sans-text" href="#contact"
+                >Payment</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="d-flex flex-row gap-5">
+        <div class="d-flex flex-column d-none d-sm-flex">
+          <h4 class="nav-icon d-flex gap-1 align-items-center text-white">
+            <img src="images/icon/PhoneDisconnect.png" />+974 55555 3456
+          </h4>
+          <h4 class="nav-icon d-flex gap-1 align-items-center text-white">
+            <img src="images/icon/Envelope.png" />info@educare.q
+          </h4>
+        </div>
+        <div><button class="custom-btn">Contact Us</button></div>
+      </div>
+    </header>
+
+    <!-- Header End -->
+
+    <!-- Banner -->
+    <div class="banner swiper mySwiper">
+      <div class="whatsapp-container">
+        <img
+          src="images/banner/Component 107.png"
+          class="left-image"
+          alt="Left Image"
+        />
+        <img
+          src="images/banner/Group 4417.png"
+          class="right-image"
+          alt="Right Image"
+        />
+        <img
+          src="images/banner/Frame 268.png"
+          class="corner-image"
+          alt="Top Corner"
+        />
+
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <h3>Personalized One-to-One Tutoring at Our Center</h3>
+          </div>
+          <div class="swiper-slide">
+            <h3>Individual Tuition, For all students till 12th grade!</h3>
+          </div>
+          <div class="swiper-slide">
+            <h3>Master IELTS, TOEFL, and Beyond with Expert Guidance!</h3>
+          </div>
+        </div>
+
+        <div
+          class="button-wrapper"
+          class="d-flex justify-content-center align-items-center bg-light"
+        >
+          <button class="btn btn-warning btn-back width-250">
+            Book a Free Demo Class
+          </button>
+
+          <button class="btn btn-danger btn-front width-250">
+            Book a Free Demo Class
+          </button>
+        </div>
+        <div class="curriculum">
+          <h1>Curriculum we offer:</h1>
+          <img
+            src="images/banner/Group 4419.png"
+            alt="Curriculum Image"
+            class="curriculum-image"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="banner-strip">
+      <h1 class="strip-tilte">
+        <img src="images/banner/UserFocus.png" class="strip-img" />
+        Personal Attention
+      </h1>
+      <span class="separator">|</span>
+
+      <h1 class="strip-tilte">
+        <img src="images/banner/Trophy.png" class="strip-img" />
+        Growth Mindset
+      </h1>
+      <span class="separator">|</span>
+
+      <h1 class="strip-tilte">
+        <img src="images/banner/Student.png" class="strip-img" />
+        Skill Development
+      </h1>
+      <span class="separator">|</span>
+
+      <h1 class="strip-tilte">
+        <img src="images/banner/HandHeart.png" class="strip-img" />
+        Passionate Teaching
+      </h1>
+    </div>
+
+    <!-- Banner End -->
+
+    <!-- section Start -->
+    <div>
+      <div
+        class="section-container d-flex flex-lg-row flex-md-col justify-content-center align-items-center"
+      >
+        <div>
+          <h1 class="section-head">The Story of <strong>Educare</strong></h1>
+          <p class="section-para">
+            At Educare education center, we believe that every student deserves
+            personalized, focused attention to reach their fullest potential.
+            Our mission is to empower students through one-on-one tutoring,
+            creating customized learning plans tailored to each individual's
+            unique needs, strengths, and learning styles.
+          </p>
+          <p class="section-para">
+            Founded on a passion for education and a commitment to excellence,
+            Educare education center was established to offer students a
+            supportive and engaging learning environment. Our team of
+            experienced tutors is dedicated to helping students excel
+            academically while also building confidence, independence, and a
+            love for learning.
+          </p>
+          <p class="section-para">
+            We specialize in a wide range of subjects across all grade levels,
+            including math, science, English, and test preparation. Whether your
+            child needs help catching up, getting ahead, or preparing for a
+            specific exam, we are here to support their journey.
+          </p>
+          <div
+            class="button-wrapper"
+            class="d-flex justify-content-center align-items-center bg-light"
+          >
+            <button class="btn btn-warning btn-back width-50 margin-button">
+              Read more
+            </button>
+
+            <button class="btn btn-danger btn-front width-50 margin-button">
+              Read more
+            </button>
+          </div>
+        </div>
+        <img src="images/section/Component 122.png" class="section-img" />
+      </div>
+
+      <div
+        class="d-flex flex-column flex-lg-row flex-md-column justify-content-center align-items-center gap-2 mt-5"
+      >
+        <div class="d-flex flex-lg-row custom-box justify-content-start p-4">
+          <h1 class="d-flex flex-column custom-head">
+            Mission
+            <p class="custom-text">
+              To help students succeed with personalized, one-to-one tutoring
+              that builds confidence, skills, and a love for learning.
+            </p>
+          </h1>
+          <img
+            src="images/section/f81c6dc4-4a3b-48b0-bae6-e563e1883fe4 1.png"
+            class="section-icon-image"
+          />
+        </div>
+        <div class="d-flex flex-lg-row custom-box justify-content-start p-4">
+          <h1 class="d-flex flex-column custom-head">
+            Vision
+            <p class="custom-text">
+              To be a trusted center where students reach their potential, build
+              confidence, and prepare for a bright future.
+            </p>
+          </h1>
+          <img
+            src="images/section/f81c6dc4-4a3b-48b0-bae6-e563e1883fe4 1 (1).png"
+            class="section-icon-image"
+          />
+        </div>
+        <div>
+          <img
+            src="images/section/Group 8.png"
+            class="section-arrow d-none d-md-none d-lg-block d-sm-none"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Section End -->
+
+    <!-- Article Start -->
+
+    <div
+      class="d-flex flex-row justify-content-center align-items-center gap-5 article-container"
+    >
+      <h1 class="d-flex flex-column article-head">
+        Our way of Teaching
+        <p class="article-para">
+          <strong>.</strong> Every teacher at Educare brings passion to their
+          lessons, making learning enjoyable with engaging activities tailored
+          to inspire and motivate each student
+        </p>
+        <p class="article-para">
+          <strong>.</strong> We focus on creating a supportive environment where
+          individual strengths are recognized, and personalized attention helps
+          students excel.
+        </p>
+        <p class="article-para">
+          <strong>.</strong> Our approach combines innovative teaching methods
+          with real-world applications, ensuring students not only learn but
+          also understand and apply their knowledge effectively.
+        </p>
+      </h1>
+      <div>
+        <img src="images/article/Rectangle 18243.png" class="article-img" />
+      </div>
+    </div>
+
+    <!-- Artricle End -->
+
+   
+
+    <!-- Programs Section -->
+<section class="programs-section">
+  <div class="programs-header">
+    <h2>Programs we offer <strong>for Kids</strong></h2>
+    <div class="button-wrapper d-flex justify-content-center align-items-center bg-light">
+      <button class="btn btn-warning btn-back width-20 margin-button">Read more</button>
+      <button class="btn btn-danger btn-front width-20 margin-button">Read more</button>
+    </div>
+  </div>
+      <input type="radio" name="slider" id="slide1" checked hidden>
+<input type="radio" name="slider" id="slide2" hidden>
+<div class="slider-track">
+  <div class="programs-cards scroll-container">
+
+
+
+
+   
+    <div class="program-card">
+      <div class="card-content">
+        <h3>English Grammar</h3>
+        <p>Master the building blocks of writing and communication.</p>
+        <div class="button-wrapper d-flex justify-content-center align-items-center bg-light">
+          <button class="btn btn-warning btn-back width-20 margin-button">Read more</button>
+          <button class="btn btn-danger btn-front width-20 margin-button">Read more</button>
+        </div>
+      </div>
+      <div class="card-img">
+        <img src="images/program_section/f81c6dc4-4a3b-48b0-bae6-e563e1883fe4 1 (2).png" alt="English Grammar Character" />
+      </div>
+    </div>
+
+
+    <div class="program-card">
+      <div class="card-content">
+        <h3>Craft Classes</h3>
+        <p>Unleash creativity with hands-on projects and artistic fun.</p>
+        <div class="button-wrapper d-flex justify-content-center align-items-center bg-light">
+          <button class="btn btn-warning btn-back width-20 margin-button">Read more</button>
+          <button class="btn btn-danger btn-front width-20 margin-button">Read more</button>
+        </div>
+      </div>
+            <div class="card-img">
+        <img src="images/program_section/f81c6dc4-4a3b-48b0-bae6-e563e1883fe4 1 (3).png" alt="Craft Class Character" />
+      </div>
+    </div>
+    
+
+    <div class="program-card">
+      <div class="card-content">
+        <h3>Art and Painting</h3>
+        <p>Express yourself through colors, sketches, and designs.</p>
+        <div class="button-wrapper d-flex justify-content-center align-items-center bg-light">
+          <button class="btn btn-warning btn-back width-20 margin-button">Read more</button>
+          <button class="btn btn-danger btn-front width-20 margin-button">Read more</button>
+        </div>
+      </div>
+            <div class="card-img">
+        <img src="images/program_section/f81c6dc4-4a3b-48b0-bae6-e563e1883fe4 1 (4).png" alt="Art and Painting Character" />
+      </div>
+    </div>
+        <div class="program-card">
+      <div class="card-content">
+        <h3>English Grammar</h3>
+        <p>Master the building blocks of writing and communication.</p>
+        <div class="button-wrapper d-flex justify-content-center align-items-center bg-light">
+          <button class="btn btn-warning btn-back width-20 margin-button">Read more</button>
+          <button class="btn btn-danger btn-front width-20 margin-button">Read more</button>
+        </div>
+      </div>
+      <div class="card-img">
+        <img src="images/program_section/f81c6dc4-4a3b-48b0-bae6-e563e1883fe4 1 (2).png" alt="English Grammar Character" />
+      </div>
+    </div>
+        <div class="program-card">
+      <div class="card-content">
+        <h3>English Grammar</h3>
+        <p>Master the building blocks of writing and communication.</p>
+        <div class="button-wrapper d-flex justify-content-center align-items-center bg-light">
+          <button class="btn btn-warning btn-back width-20 margin-button">Read more</button>
+          <button class="btn btn-danger btn-front width-20 margin-button">Read more</button>
+        </div>
+      </div>
+      <div class="card-img">
+        <img src="images/program_section/f81c6dc4-4a3b-48b0-bae6-e563e1883fe4 1 (2).png" alt="English Grammar Character" />
+      </div>
+    </div>
+  </div>
+  <div class="slider-dots">
+  <label for="slide1"></label>
+  <label for="slide2"></label>
+</div>
+  </div>
+</section>
+
+
+<!-- Subjects Section -->
+<section class="subjects-section">
+  <div class="subjects-header">
+    <h2>Subjects We <strong>Teach</strong></h2>
+   <div
+            class="button-wrapper"
+            class="d-flex justify-content-center align-items-center bg-light"
+          >
+            <button class="btn btn-warning btn-back width-50 margin-button">
+              Read more
+            </button>
+
+            <button class="btn btn-danger btn-front width-50 margin-button">
+              Read more
+            </button>
+          </div>
+  </div>
+  <div class="subjects-cards">
+    <div class="subject-card">
+      <img src="math-icon.svg" alt="Maths">
+      <span>Maths</span>
+    </div>
+    <div class="subject-card">
+      <img src="physics-icon.svg" alt="Physics">
+      <span>Physics</span>
+    </div>
+    <div class="subject-card">
+      <img src="chemistry-icon.svg" alt="Chemistry">
+      <span>Chemistry</span>
+    </div>
+    <div class="subject-card">
+      <img src="biology-icon.svg" alt="Biology">
+      <span>Biology</span>
+    </div>
+    <div class="subject-card">
+      <img src="cs-icon.svg" alt="Computer Science">
+      <span>Computer Science</span>
+    </div>
+    <div class="subject-card">
+      <img src="english-icon.svg" alt="English">
+      <span>English</span>
+    </div>
+  </div>
+</section>
+
+
+    <!-- program section End -->
+
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      // Header
+      document.addEventListener("DOMContentLoaded", function () {
+        const schoolToggle = document.getElementById("schoolDropdown");
+        const schoolSubmenu = document.getElementById("schoolSubmenu");
+
+        schoolToggle.addEventListener("click", function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+          schoolSubmenu.classList.toggle("show");
+        });
+      });
+      // Header end
+
+      // Banner
+      const swiper = new Swiper(".mySwiper", {
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+      });
+
+      // Banner End
+    </script>
+  </body>
+</html>
