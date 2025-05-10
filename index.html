@@ -26,36 +26,85 @@
 
   <style>
 
-
-/* Subjects Section */
-.subjects-section {
-  background-color: #FDF7F0;
+.footer {
+  background-color: #8B1C3E;
+  color: #fff;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
 }
 
-.subjects-cards {
+.footer-container {
   display: flex;
-  gap: 20px;
-  overflow-x: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  gap: 40px;
 }
 
-.subject-card {
-  background-color: #FEECDC;
-  border-radius: 12px;
-  padding: 20px;
-  text-align: center;
-  min-width: 150px;
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
 }
 
-.subject-card img {
-  width: 50px;
-  height: 50px;
+.logo-icon {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+.footer-section h4 {
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0rem;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: #e0dcdc;
+}
+
+.footer-section p {
+  color: #e0dcdc;
+  line-height: 1.6;
   margin-bottom: 10px;
 }
 
-.subject-card span {
-  font-size: 14px;
-  font-weight: 500;
+.footer-section a:hover {
+  text-decoration: underline;
 }
+
+.social-icons {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  font-size: 18px;
+}
+
+.map-placeholder {
+  width: 80px;
+  height: 100px;
+  background-color: #b1506d;
+  margin-top: 10px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #a84865;
+}
+
+
 
 
   </style>
@@ -366,11 +415,6 @@
 <input type="radio" name="slider" id="slide2" hidden>
 <div class="slider-track">
   <div class="programs-cards scroll-container">
-
-
-
-
-   
     <div class="program-card">
       <div class="card-content">
         <h3>English Grammar</h3>
@@ -447,7 +491,7 @@
 </div>
   </div>
 </section>
-
+<!-- program section End -->
 
 <!-- Subjects Section -->
 <section class="subjects-section">
@@ -466,37 +510,130 @@
             </button>
           </div>
   </div>
+        <input type="radio" name="subject-slider" id="subject-slide1" checked hidden>
+<input type="radio" name="subject-slider" id="subject-slide2" hidden>
+<div class="slider-track">
   <div class="subjects-cards">
     <div class="subject-card">
-      <img src="math-icon.svg" alt="Maths">
+      <img src="images/subject_section/Group 4453.png" alt="Maths">
       <span>Maths</span>
     </div>
     <div class="subject-card">
-      <img src="physics-icon.svg" alt="Physics">
+      <img src="images/subject_section/Group 4456.png" alt="Physics">
       <span>Physics</span>
     </div>
     <div class="subject-card">
-      <img src="chemistry-icon.svg" alt="Chemistry">
+      <img src="images/subject_section/Group 4457.png" alt="Chemistry">
       <span>Chemistry</span>
     </div>
+    
     <div class="subject-card">
-      <img src="biology-icon.svg" alt="Biology">
+      <img src="images/subject_section/Group 4458.png" alt="Biology">
       <span>Biology</span>
     </div>
     <div class="subject-card">
-      <img src="cs-icon.svg" alt="Computer Science">
+      <img src="images/subject_section/Group 4459.png" alt="Computer Science">
       <span>Computer Science</span>
     </div>
     <div class="subject-card">
-      <img src="english-icon.svg" alt="English">
+      <img src="images/subject_section/Frame 267.png" alt="English">
       <span>English</span>
     </div>
+    </div>
+      <div class="slider-dots">
+  <label for="subject-slide1"></label>
+  <label for="subject-slide2"></label>
+</div>
   </div>
 </section>
+<!-- subject section End -->
+
+<!-- map section -->
+
+<div class="d-flex flex-column justify-content-center align-items-center map-section">
+  <h1>Prepare Your Child for a <strong>World of Opportunities with Educare</strong></h1>
+  <img src="images/map_section/Component 86.png" class="map-img">
+</div>
 
 
-    <!-- program section End -->
+<!-- map end -->
 
+<!-- youtube vedio  -->
+
+<div class="d-flex flex-column justify-content-center align-items-center map-section">
+  <h1>Learn More About  <strong>Our Space</strong></h1>
+  <img src="images/youtube/Rectangle 18242.png" class="map-img">
+</div>
+
+
+<!-- youtube vedio end -->
+
+
+
+
+
+<!-- Footer start -->
+ 
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Logo -->
+    <div class="footer-logo">
+      <div class="logo-icon"></div>
+      <span>Educare</span>
+    </div>
+
+    <!-- Navigation -->
+    <div class="footer-section">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Curriculum</a></li>
+        <li><a href="#">Career</a></li>
+        <li><a href="#">Blogs</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-section">
+      <h4>Contact info</h4>
+      <ul>
+        <li><a href="mailto:educare@gmail.com">educare@gmail.com</a></li>
+        <li><a href="mailto:info@educare.com">info@educare.com</a></li>
+        <li><a href="tel:+97444123456">+974 4412 3456</a></li>
+        <li><a href="tel:+97455347890">+974 5534 7890</a></li>
+      </ul>
+      <div class="social-icons">
+        <a href="#"><img></a>
+        <a href="#"><img></a>
+        <a href="#"><img></a>
+        <a href="#"><img></a>
+      </div>
+    </div>
+
+    <!-- Address -->
+    <div class="footer-section">
+      <h4>Office Address</h4>
+      <p>
+        EducareEducation Center<br />
+        Building 45, Al Sadd Street,<br />
+        Doha, Qatar
+      </p>
+      <a href="#">View on Map</a>
+      <img src="">
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+  
+  </div>
+</footer>
+
+
+
+
+<!-- Footer start end -->
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
