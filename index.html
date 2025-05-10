@@ -16,7 +16,7 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
 
     <link rel="stylesheet" href="css/style.css" />
@@ -124,30 +124,33 @@
       <div class="whatsapp-container">
         <img
           src="images/banner/Component 107.png"
-          class="left-image"
+          class="left-image smooth-float"
           alt="Left Image"
         />
         <img
           src="images/banner/Group 4417.png"
-          class="right-image"
+          class="right-image smooth-float"
           alt="Right Image"
         />
         <img
           src="images/banner/Frame 268.png"
-          class="corner-image"
+          class="corner-image smooth-float"
           alt="Top Corner"
         />
 
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <h3>Personalized One-to-One Tutoring at Our Center</h3>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <h3>Personalized One-to-One Tutoring at Our Center</h3>
+            </div>
+            <div class="swiper-slide">
+              <h3>Individual Tuition, For all students till 12th grade!</h3>
+            </div>
+            <div class="swiper-slide">
+              <h3>Master IELTS, TOEFL, and Beyond with Expert Guidance!</h3>
+            </div>
           </div>
-          <div class="swiper-slide">
-            <h3>Individual Tuition, For all students till 12th grade!</h3>
-          </div>
-          <div class="swiper-slide">
-            <h3>Master IELTS, TOEFL, and Beyond with Expert Guidance!</h3>
-          </div>
+          <div class="swiper-pagination"></div>
         </div>
 
         <div class="button-wrapper">
@@ -224,9 +227,7 @@
             child needs help catching up, getting ahead, or preparing for a
             specific exam, we are here to support their journey.
           </p>
-          <div
-            class="button-wrapper"
-          >
+          <div class="button-wrapper">
             <button class="btn btn-warning btn-back width-50 margin-button">
               Read more
             </button>
@@ -236,7 +237,10 @@
             </button>
           </div>
         </div>
-        <img src="images/section/Component 122.png" class="section-img" />
+        <img
+          src="images/section/Component 122.png"
+          class="section-img smooth-float"
+        />
       </div>
 
       <div
@@ -453,9 +457,7 @@
     <section class="subjects-section">
       <div class="subjects-header">
         <h2>Subjects We <strong>Teach</strong></h2>
-        <div
-          class="button-wrapper"
-        >
+        <div class="button-wrapper">
           <button class="btn btn-warning btn-back width-50 margin-button">
             Read more
           </button>
@@ -594,36 +596,9 @@
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
 
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    </body>
+    </html>
 
-    <script>
-
-            // Banner
-      const swiper = new Swiper(".mySwiper", {
-        loop: true,
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
-        },
-      });
-
-      // Banner End
-      // Header
-      document.addEventListener("DOMContentLoaded", function () {
-        const schoolToggle = document.getElementById("schoolDropdown");
-        const schoolSubmenu = document.getElementById("schoolSubmenu");
-
-        schoolToggle.addEventListener("click", function (e) {
-          e.preventDefault();
-          e.stopPropagation();
-          schoolSubmenu.classList.toggle("show");
-        });
-      });
-      // Header end
-
-
-    </script>
-  </body>
-</html>
